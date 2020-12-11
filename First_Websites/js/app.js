@@ -1,1 +1,5 @@
-function onClick(message){    window.open(message);}
+function onClick(message){
+    window.open(message);
+
+
+}
