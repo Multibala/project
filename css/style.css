@@ -245,10 +245,12 @@ footer{
     width: 100%;
     margin: auto;
     border-radius: 5px;
+    padding:10px 10px;
 }
 .links a{
     text-align: center;
     font-size: 1.5vw;
+
 }
 
 .books{
@@ -288,6 +290,47 @@ footer{
     padding: 5px 10px;
     margin-bottom: 20px;
 }
+
+/********* Gallery **********/
+.photos,.videos{
+    font-family: 'courier', serif;
+    font-weight: bold;
+    padding: 50px 40px 50px 40px;
+    color: white;
+    text-align: center;
+    background-color:#0f6674;
+    margin-top:15px ;
+    text-transform: uppercase;
+}
+
+.gallery_box{
+    margin: 40px 50px;
+}
+.gallery_box img{
+    transition: 1s;
+    padding: 15px;
+    width: 230px;
+}
+.gallery_box img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.2);
+}
+.video-player >.row{
+   justify-content: space-between;
+    width: 100%;
+}
+.vid1,.vid2,.vid3{
+    display: block;
+    height:600px;
+    border:solid 2px white;
+    padding:0px;
+    margin:15px 20px;
+}
+
+video:focus{
+    outline: none;
+}
+
 
 
 
@@ -337,6 +380,11 @@ footer{
     }
     .invisible-sm{
         visibility: hidden;
+        display: none;
+    }
+    .links a{
+        font-size: 16px;
+
     }
 
 
@@ -349,6 +397,7 @@ footer{
 @media (max-width: 767px) {
     .invisible-xs{
         visibility: hidden;
+        display: none;
     }
     .main-content{
         background-image: url("../materials/background-students-mobile.jpg");
@@ -367,6 +416,13 @@ footer{
         margin-bottom:100px;
         width:75%;
     }
+    .links a{
+        font-size: 16px;
+
+    }
+    .text-ourprogramms{
+        font-size: 25px;
+    }
 
 
 
@@ -378,6 +434,7 @@ footer{
 @media (max-width: 479px) {
     .invisible-sxs{
         visibility: hidden;
+        display: none;
     }
     .col-xxs {
         -ms-flex: 0 0 75%;
@@ -387,6 +444,9 @@ footer{
     .programs-page img{
         margin-bottom:100px;
         width:100%;
+    }
+    .text-ourprogramms{
+        font-size: 6vw;
     }
 
 
